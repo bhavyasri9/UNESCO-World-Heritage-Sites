@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heritage Explorer | UNESCO Insights</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      :root {
+        --navy: #0b3c5d;
+        --gold: #d4af37;
+        --ivory: #f8f4e3;
+        --dark: #1c1c1c;
+      }
+
+      body {
+        background-color: var(--ivory);
+        font-family: "Georgia", serif;
+        color: var(--dark);
+        scroll-behavior: smooth;
+      }
+
+      .navbar {
+        background-color: var(--navy);
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: var(--gold) !important;
+        font-weight: 500;
+      }
+
+      .hero-section {
+        background:
+          linear-gradient(rgba(11, 60, 93, 0.8), rgba(11, 60, 93, 0.8)),
+          url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 120px 20px;
+        text-align: center;
+      }
+
+      .hero-section h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        margin: 60px 0 30px 0;
+        color: var(--navy);
+      }
+
+      .dashboard-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 50px;
+        border-top: 6px solid var(--gold);
+        transition: 0.4s;
+      }
+
+      .dashboard-card:hover {
+        transform: translateY(-8px);
+      }
+
+      .tableauViz {
+        width: 100%;
+        height: 800px;
+        border-radius: 15px;
+      }
+
+      footer {
+        background-color: var(--navy);
+        color: var(--gold);
+        text-align: center;
+        padding: 20px;
+        margin-top: 80px;
+      }
+
+      .scroll-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: var(--gold);
+        border: none;
+        padding: 12px 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Heritage Explorer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#analysis">Risk Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#story1">Story 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#story2">Story 2</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <h1>UNESCO World Heritage Insights</h1>
+      <p>Interactive Data Storytelling of Global Cultural Treasures</p>
+    </section>
+
+    <div class="container">
+      <h2 class="section-title" id="overview">Global Site Overview</h2>
+      <div class="dashboard-card">
+        <div class="tableauPlaceholder">
+          <object class="tableauViz">
+            <param name="host_url" value="https://public.tableau.com/" />
+            <param name="embed_code_version" value="3" />
+            <param name="path" value="shared/B43H7R8BR" />
+            <param name="toolbar" value="yes" />
+          </object>
+        </div>
+      </div>
+
+      <h2 class="section-title" id="analysis">Heritage Risk Monitoring</h2>
+      <div class="dashboard-card">
+        <div class="tableauPlaceholder">
+          <object class="tableauViz">
+            <param name="host_url" value="https://public.tableau.com/" />
+            <param name="embed_code_version" value="3" />
+            <param name="path" value="shared/84ZCYGPTQ" />
+            <param name="toolbar" value="yes" />
+          </object>
+        </div>
+      </div>
+
+      <h2 class="section-title" id="story1">
+        Heritage Story – Endangerment Overview
+      </h2>
+      <div class="dashboard-card">
+        <div class="tableauPlaceholder">
+          <object class="tableauViz">
+            <param name="host_url" value="https://public.tableau.com/" />
+            <param name="embed_code_version" value="3" />
+            <param
+              name="name"
+              value="UNESCO_World_Heritage_Sites_17720315763480/Story1"
+            />
+            <param name="toolbar" value="yes" />
+          </object>
+        </div>
+      </div>
+
+      <h2 class="section-title" id="story2">
+        Heritage Story – Global Overview
+      </h2>
+      <div class="dashboard-card">
+        <div class="tableauPlaceholder">
+          <object class="tableauViz">
+            <param name="host_url" value="https://public.tableau.com/" />
+            <param name="embed_code_version" value="3" />
+            <param
+              name="name"
+              value="UNESCO_World_Heritage_Sites_17720315763480/Story2"
+            />
+            <param name="toolbar" value="yes" />
+          </object>
+        </div>
+      </div>
+    </div>
+
+    <button
+      class="scroll-btn"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑
+    </button>
+
+    <footer>© 2026 Heritage Explorer 🌍</footer>
+
+    <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
